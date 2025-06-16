@@ -16,3 +16,5 @@ GlobalLayout({children, }: {children: ReactNode}){}
 -----
 폴더 "src" --> "components" --> "global-layout.module.css" 
 
+2025년 06월 16일
+

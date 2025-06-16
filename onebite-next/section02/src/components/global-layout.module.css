@@ -1,4 +1,4 @@
-/* 전체 레이아웃의 컨테이너 박스 스타일 */
+/* 전체 레이아웃의 컨테이너 박스 스타일 설정하기*/
 .container {
     background-color: white; /* 배경색: 흰색 */
     max-width: 600px; /* 최대 너비: 600px */
