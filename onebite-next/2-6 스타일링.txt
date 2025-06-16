@@ -1,0 +1,2 @@
+"src"폴더 안에 "pages"폴더 안에 "index.module.css" 를 만들고 "index.tsx"에 스타일을 넣는다.
+ 

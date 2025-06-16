@@ -1,0 +1,18 @@
+npm i 사용
+npx prisma db push 사용
+npm run seed
+npm run build
+npm run start
+ctrl + c 또는 d // 종료 버튼인거 같음
+http://localhost:12345/ 로 들어가지는 거 같음
+
+
+터미널 창 옆 (휴지통 옆 아이콘) 터미널분할 아이콘 클릭
+npx prisma studio 입력 하게 되면 기존에 띄우던 db창 알수있음
+http://localhost:5555 라고 함
+
+
+! 주의사항!
+1주일 동안 db 사용하지 않으면 프로젝트가 멈춤
+https://supabase.com/
+들어가서 프로젝트에 들어가서 실행 누르고 1시간 정도 기다리기 바로 작동 x 또는 새로 생성하기

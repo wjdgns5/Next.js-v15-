@@ -1,0 +1,28 @@
+프리페칭 (Pre-Fetching) 
+Pre : 사전에, 미리
+Fetching : 불러온다.
+
+"현재 사용자가 보고있는 페이지" 기준으로 다른 페이지로 넘어갈수 있는 링크페이지를 사전에 미리 불러온다.
+(빠른 페이지 이동을 위해 제공되는 기능)
+
+-----
+알아야 하는 팁 !!
+Hydration은 최초 1회만 필요하다.
+이후 다른 페이지의 동작 기능은 Pre-Fetch된 JS Bundle 안에 포함된 로직으로 작동합니다.
+
+-----
+Link> 태그를 사용하면 자동으로 Pre Fetching 이 작동된다.
+<Link> 태그에서 Pre Fetching 비 활성화 prefetch={false}
+<Link> 외에 Pre Fetching 사용 방법은  useEffect()를 사용한다.
+-----
+
+**실행방법** 
+
+1. 배포 전 빌드: **npm run build**
+2. 빌드 실행: **npm run start**
+
+
+
+
+
+

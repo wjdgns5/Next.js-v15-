@@ -1,0 +1,18 @@
+_app.tsx : Global Layout을 수정할려고 하면 모든 페이지의 부모(root component)을 안에 수정해야 한다.
+
+---
+스타일링 수정하기
+
+global layout 별도의 컨포넌트를 만들기
+폴더 "src" --> "components" --> global-layout.tsx 
+
+----
+global-layout.tsx 
+
+GlobalLayout({children, }: {children: ReactNode}){} 
+ props 객체의 타입은 { children: ReactNode }
+ props 객체중에서 children 만 꺼내서 사용하겠다. (구조분해)
+
+-----
+폴더 "src" --> "components" --> "global-layout.module.css" 
+

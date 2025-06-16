@@ -1,0 +1,36 @@
+/* 전체 레이아웃의 컨테이너 박스 스타일 */
+.container {
+    background-color: white; /* 배경색: 흰색 */
+    max-width: 600px; /* 최대 너비: 600px */
+    min-height: 100vh; /* 최소 높이: 화면 전체 높이 */
+    margin: 0 auto; /* 가운데 정렬 (상하 0, 좌우 자동) */
+
+    box-shadow: rgba(100, 100, 100, 0.2) 0px 0px 29px 0px; /* 그림자 효과 */
+    padding: 0px 15px; /* 좌우 여백 15px */
+}
+
+/* 헤더 영역 스타일 */
+.header {
+    height: 60px; /* 높이: 60px */
+
+    font-weight: bold; /* 글자 굵기: 굵게 */
+    font-size: 18px; /* 글자 크기: 18px */
+    line-height: 60px; /* 줄 높이: 60px (세로 중앙 정렬 효과) */
+}
+
+/* 링크 스타일을 검은색으로 고정한다. */
+.header > a {
+    color: black; /* 색깔: 블랙 */
+    text-decoration: none; /* 밑줄 없애기 */ 
+}
+
+/* 메인 콘텐츠 영역의 위쪽 여백 */
+.main {
+    padding-top: 10px; /* 위쪽 여백: 10px */
+}
+
+/* 푸터 스타일 */
+.footer {
+    padding: 100px 0px; /* 상하 여백: 100px, 좌우 0px */
+    color: gray; /* 글자 색상: 회색 */
+}

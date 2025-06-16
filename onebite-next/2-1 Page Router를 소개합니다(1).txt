@@ -1,0 +1,39 @@
+----
+npx : 직접 설치하지 않고도 패키지를 실행할 수 있게 해주는 도구"
+그러니깐 : npm 레지스트리에서 해당 패키지를 일시적으로 다운로드 해서 실행 후
+실행이 끝나면 -> 일시 다운로드 한 파일이 삭제된다. 
+
+create-next-app : Next.js 프로젝트를 빠르게 "생성"해주는 도구
+
+@14 : Next.Js 의 "14버전"을 의미한다.
+
+section02 : 이거는 "section02" 폴더를 생성하라는 의미이다.
+----
+
+----
+보일러플레이트(Boilerplate) 같은 거다.
+쉽게 설명하면 어떤 프로젝트를 시작할 때 매번 새로 만들기 귀찮은 설정, 구조, 코드들을 미리 준비해놓은 템플릿이다.
+----
+
+설치방법
+1.vsCode를 실행한다.
+2. 문서 폴더에 "NextJsFile"폴더 안에 "onebite-next" 라는 폴더를 생성한다.
+4. "Ctrl + j" 를 눌러 터미널창을 실행한다.
+3. 터미널 창에 "npx create-next-app@14 section02" 를 입력한다.
+4. 아래의 설정이 뜬다.
+  4_1. TypeScript ? ... 에서는 "Yes"
+  4_2. ESLine? ... 에서는 "Yes"
+  4_3. Tailwind CSS? ... "No"
+  4_4. `src/` directory? ... "Yes"
+  4_5 App Router? (recommend) ... "No"
+  4_6 alias (@/*)? ... "No"
+5. 설치가 완료되면 "vsCode" 에서 새창열기 "section02" 폴더를 클릭한다.
+6.   "Ctrl + j" 를 눌러 터미널창을 실행 후 "npm run dev" 를 입력한다.
+7. 브라우저에 들어가서 "http://localhost:3000" 주소를 입력하면 들어가진다.
+
+
+
+
+
+
+  

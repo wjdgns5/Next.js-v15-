@@ -1,0 +1,11 @@
+<Link> 태그
+"_app.tsx" 에서 <Link href={"/"}></Link> 태그를 이용해서 페이지를 이동할수 있다. 
+
+Programmatic Navigation (프로그래매틱한 페이지 이동)
+사용자가 클릭하는 게 아닌, 특정조건이나, 버튼이 클릭되는 함수내부에서 페이지를 이동시키는 방법이다.
+ 
+const router = useRouter();
+
+router.push("경로") : 
+router.replace("경로") : 뒤로가기를 방지하면서 페이지 이동  
+router.back("경로") : 
