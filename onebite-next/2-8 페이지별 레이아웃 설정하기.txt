@@ -1,1 +1,46 @@
-페이지별 레이아웃 설정하기
+"components"폴더 안에 "searchable-layout.tsx"파일을 생성한다.
+
+"pages"폴더 안에 "index.tsx"파일 안에 코드를 작성한다.
+------
+
+index.tsx
+
+함수에 어떻게 메서드를 추가할수 있는가?
+함수 : Home()
+메서드 : getLayout
+
+--> Home.getLayout 이 가능한 이유?
+
+page: ReactNode
+--> 함수는 page라는 ReactNode 하나만 인자로 받아요
+
+---
+_app.tsx
+
+// App 컴포넌트: 현재 접속요청이 온 페이지 역할을 하는 컴포넌트
+( { Component , pageProps } : AppProps )  
+Component는 라는 이름의 props로 전달받게 된다.
+
+  // 예외처리 하려면 "??" 를 사용해야 한다.
+  const getLayout = Component.getLayout ?? ((page : ReactNode)=>page);
+
+----
+app.tsx
+
+타입정의 
+type NextPageWithLayout
+
+----
+searchable-layout.tsx
+
+e: React.ChangeEvent<HTMLInputElement> : 리액트에서 발생한 ChangeEvent 객체타입인데 HTMLInputElement 태그에서 발생한 타입이다.
+
+const q = router.query.q as string;
+// q 를 추출한 값이 "string", "string[]", "undefined" 이거나 "1개", "2개이상"이거나, "없거나" 하기 때문이다.
+// q 뒤에 "as string" 을 붙이게 되면 string 타입으로 추론되기 때문에 타입문제를 해결할수 있다.  
+--------         
+
+"components"폴더안에 "searchable-layout.module.css"를 만든다.
+
+
+

@@ -2,12 +2,12 @@ import { useRouter } from "next/router";
 
 export default function Page() {
     const router = useRouter();
-    const {id} = router.query;
-    console.log(id);
-    console.log(router);
+     const { id } = router.query;
+     console.log(id);
+    // console.log(router);
 
 
-    return <h1>Book {id}</h1>;
+     return <h1>Book {id} </h1>;
     // 동적 경로에 해당하는 파일이다.
 
     // http://localhost:3000/book/1557/1111 여기서 {1557, 1111} 데이터를 낚아챈다.
