@@ -1,0 +1,30 @@
+
+"src" 폴더 아래에 "mock" 폴더 생성
+"mock" 폴더안에 "books.json" 파일을 생성 후 값을 넣는다.
+
+"src" 폴더 아래에 "component" 폴더 안에 "book-item.tsx" 파일을 생성한다.
+---------------------
+"pages"폴더안에 "index.tsx" 파일안에 아래와 같이 import 되어 있다.
+import books from "@/mock/books.json";
+import BookItem from "@/components/book-item";
+
+@ 는 src를 의미한다.
+tsconfig.json 파일안에 아래와 같이 구성되어 있다.
+"paths": { "@/*": ["./src/*"] }
+--------------------
+"index.tsx" 파일안에서 사용중
+{...book} 사용이유 : key:value가 많을수록, key 값을 일일이 다 적기는 너무 비효율적이므로 사용
+
+-----------------------------
+
+ "src" 폴더 아래에 "component" 폴더 안에 "book-item.module.css" 파일을 생성한다.
+------------------------------
+"src" 폴더 아래에 "pages"폴더 아래에 "search"폴더아래 "index.tsx"파일을 수정한다.
+----------------------------
+"src" 폴더 아래에 "pages"폴더 아래에 "book"폴더 안에 "[[...id]].tsx" 파일 이름을 "[id].tsx" 로 변경한다.
+이유 : 검색 했을 시 딱 하나의 도서 데이터만 필요하기 때문에 위와 같이 변경한다.
+--------------------------
+"src" 폴더 아래에 "pages"폴더 아래에 "book"폴더 안에 "[id].module.css" 파일을 만든다.
+
+
+ 
