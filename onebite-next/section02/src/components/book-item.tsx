@@ -6,7 +6,7 @@ export default function BookItem({
         id,
         title,
         subTitle,
-        description,
+        // description,
         author,
         publisher,
         coverImgUrl,
@@ -21,7 +21,6 @@ export default function BookItem({
             <div className={style.author}>
                 {author} | {publisher}
             </div>
-            {/* <div className={style.description}>{description}</div> */}
         </div>
     </Link>
     );

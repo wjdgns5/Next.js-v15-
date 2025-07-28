@@ -2,7 +2,7 @@ import { useRouter } from "next/router";
 import { ReactNode, useEffect, useState } from "react";
 import style from './searchable-layout.module.css';
 
-export default function SearchableLayout({children,}: {children:ReactNode}) {
+export default function SearchableLayout({children,}: {children:ReactNode;}) {
 
     const router = useRouter();
     const [search, setSearch] = useState("");
@@ -17,12 +17,12 @@ export default function SearchableLayout({children,}: {children:ReactNode}) {
 
     // e: React.ChangeEvent<HTMLInputElement> : 리액트에서 발생한 ChangeEvent 객체타입인데 HTMLInputElement 태그에서 발생한 타입이다.           
     const onChangeSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
-        setSearch(e.target.value)
+        setSearch(e.target.value);
     };
 
     const onSubmit = () => {
         if(!search || q === search) return;
-        router.push(`/search?q=${search}`)
+        router.push(`/search?q=${search}`);
     };
 
     const onKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
